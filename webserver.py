@@ -4,6 +4,7 @@ import tornado.web
 class HelloHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world")
+        self.write("this is only for testing purpose")
 
     def post(self):
         user = self.get_argument("username")
